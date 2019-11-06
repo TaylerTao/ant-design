@@ -1,7 +1,7 @@
 {
-  "name": "antd",
+  "name": "@baidu/hi-antd",
   "version": "3.25.0",
-  "description": "An enterprise-class UI design language and React components implementation",
+  "description": "antd 百度Hi版",
   "keywords": [
     "ant",
     "component",
@@ -13,20 +13,19 @@
     "react-component",
     "ui"
   ],
-  "homepage": "http://ant.design/",
+  "homepage": "/antd",
   "bugs": {
     "url": "https://github.com/ant-design/ant-design/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
+    "url": "https://github.com/TaylerTao/ant-design"
   },
   "license": "MIT",
   "contributors": [
     "ant"
   ],
   "files": [
-    "dist",
     "lib",
     "es"
   ],
@@ -47,7 +46,6 @@
     "compile": "antd-tools run compile",
     "predeploy": "antd-tools run clean && npm run site && cp netlify.toml CNAME _site && cp .circleci/config.yml _site && npm run site:test",
     "deploy": "bisheng gh-pages --push-only",
-    "deploy:china-mirror": "git checkout gh-pages && git pull origin gh-pages && git push git@gitee.com:ant-design/ant-design.git gh-pages",
     "dist": "antd-tools run dist",
     "lint": "npm run lint:tsc && npm run lint:script && npm run lint:demo && npm run lint:style && npm run lint:deps",
     "lint-fix": "npm run lint-fix:script && npm run lint-fix:demo && npm run lint-fix:style",
@@ -248,7 +246,7 @@
     "react-dom": ">=16.0.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npm.baidu-int.com/"
   },
   "bundlesize": [
     {
@@ -260,5 +258,5 @@
       "maxSize": "60 kB"
     }
   ],
-  "title": "Ant Design"
+  "title": "Hi Ant Design"
 }
