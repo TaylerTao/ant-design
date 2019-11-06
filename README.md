@@ -42,11 +42,11 @@ English | [简体中文](./README-zh_CN.md)
 ## 📦 Install
 
 ```bash
-npm install antd
+暂不对外开放
 ```
 
 ```bash
-yarn add antd
+暂不对外开放
 ```
 
 ## 🔨 Usage
