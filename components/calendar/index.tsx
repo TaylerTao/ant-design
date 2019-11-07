@@ -52,7 +52,7 @@ export interface CalendarState {
 class Calendar extends React.Component<CalendarProps, CalendarState> {
   static defaultProps = {
     locale: {},
-    fullscreen: true,
+    fullscreen: false,
     onSelect: noop,
     onPanelChange: noop,
     onChange: noop,

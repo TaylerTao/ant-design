@@ -11,6 +11,7 @@ import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 
 let mousePosition: { x: number; y: number } | null;
+const isWin = /windows/i.test(window.navigator.userAgent);
 export const destroyFns: Array<() => void> = [];
 
 // ref: https://github.com/ant-design/ant-design/issues/15795
@@ -193,17 +194,35 @@ export default class Modal extends React.Component<ModalProps, {}> {
     const { okText, okType, cancelText, confirmLoading } = this.props;
     return (
       <div>
-        <Button onClick={this.handleCancel} {...this.props.cancelButtonProps}>
-          {cancelText || locale.cancelText}
-        </Button>
-        <Button
-          type={okType}
-          loading={confirmLoading}
-          onClick={this.handleOk}
-          {...this.props.okButtonProps}
-        >
-          {okText || locale.okText}
-        </Button>
+        {isWin ? (
+          <>
+            <Button
+              type={okType}
+              loading={confirmLoading}
+              onClick={this.handleOk}
+              {...this.props.okButtonProps}
+            >
+              {okText || locale.okText}
+            </Button>
+            <Button onClick={this.handleCancel} {...this.props.cancelButtonProps}>
+              {cancelText || locale.cancelText}
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button onClick={this.handleCancel} {...this.props.cancelButtonProps}>
+              {cancelText || locale.cancelText}
+            </Button>
+            <Button
+              type={okType}
+              loading={confirmLoading}
+              onClick={this.handleOk}
+              {...this.props.okButtonProps}
+            >
+              {okText || locale.okText}
+            </Button>
+          </>
+        )}
       </div>
     );
   };

@@ -22,7 +22,7 @@ function onPanelChange(value, mode) {
 
 ReactDOM.render(
   <div style={{ width: 300, border: '1px solid #d9d9d9', borderRadius: 4 }}>
-    <Calendar fullscreen={false} onPanelChange={onPanelChange} />
+    <Calendar onPanelChange={onPanelChange} />
   </div>,
   mountNode,
 );

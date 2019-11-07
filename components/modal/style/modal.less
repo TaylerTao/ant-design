@@ -1,7 +1,7 @@
 @dialog-prefix-cls: ~'@{ant-prefix}-modal';
 @table-prefix-cls: ~'@{ant-prefix}-table';
-@modal-footer-padding-vertical: 10px;
-@modal-footer-padding-horizontal: 16px;
+@modal-footer-padding-vertical: 16px;
+@modal-footer-padding-horizontal: 20px;
 
 .@{dialog-prefix-cls} {
   .reset-component;
@@ -30,7 +30,7 @@
     color: @modal-heading-color;
     font-weight: 500;
     font-size: @font-size-base;
-    line-height: 22px;
+    line-height: 1;
     word-wrap: break-word;
   }
 
@@ -87,7 +87,7 @@
   }
 
   &-body {
-    padding: @modal-body-padding;
+    padding: 27px @modal-body-padding 9px;
     font-size: @font-size-base;
     line-height: @line-height-base;
     word-wrap: break-word;

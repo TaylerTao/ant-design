@@ -12,6 +12,8 @@ title: Calendar
 
 当数据是日期或按照日期划分时，例如日程、课表、价格日历等，农历等。目前支持年/月切换。
 
+> 更完善的 calendar 组件，请参考 [Toast-UI Calendar](https://nhn.github.io/tui.calendar/latest/)
+
 ## API
 
 **注意：**Calendar 部分 locale 是从 value 中读取，所以请先正确设置 moment 的 locale。
@@ -36,7 +38,7 @@ title: Calendar
 | dateFullCellRender | 自定义渲染日期单元格，返回内容覆盖单元格 | function(date: moment): ReactNode | 无 |  |
 | defaultValue | 默认展示的日期 | [moment](http://momentjs.com/) | 默认日期 |  |
 | disabledDate | 不可选择的日期 | (currentDate: moment) => boolean | 无 |  |
-| fullscreen | 是否全屏显示 | boolean | true |  |
+| fullscreen | 是否全屏显示 | boolean | false |  |
 | locale | 国际化配置 | object | [默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |  |
 | mode | 初始模式，`month/year` | string | month |  |
 | monthCellRender | 自定义渲染月单元格，返回内容会被追加到单元格 | function(date: moment): ReactNode | 无 |  |
