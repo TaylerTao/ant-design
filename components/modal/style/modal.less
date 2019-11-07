@@ -29,7 +29,7 @@
     margin: 0;
     color: @modal-heading-color;
     font-weight: 500;
-    font-size: @font-size-lg;
+    font-size: @font-size-base;
     line-height: 22px;
     word-wrap: break-word;
   }
@@ -80,10 +80,9 @@
   }
 
   &-header {
-    padding: 16px 24px;
+    padding: 8px 12px;
     color: @text-color;
     background: @modal-header-bg;
-    border-bottom: @border-width-base @border-style-base @border-color-split;
     border-radius: @border-radius-base @border-radius-base 0 0;
   }
 
@@ -97,9 +96,12 @@
   &-footer {
     padding: @modal-footer-padding-vertical @modal-footer-padding-horizontal;
     text-align: right;
-    background: @modal-footer-bg;
-    border-top: @border-width-base @border-style-base @modal-footer-border-color-split;
+    background: @component-background;
     border-radius: 0 0 @border-radius-base @border-radius-base;
+
+    button {
+      width: 80px;
+    }
     button + button {
       margin-bottom: 0;
       margin-left: 8px;

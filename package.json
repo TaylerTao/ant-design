@@ -1,6 +1,6 @@
 {
   "name": "@baidu/hi-antd",
-  "version": "3.25.0",
+  "version": "3.25.1",
   "description": "antd 百度Hi版",
   "keywords": [
     "ant",
@@ -58,7 +58,7 @@
     "lint:script": "eslint . --ext '.js,.jsx,.ts,.tsx'",
     "lint:style": "stylelint '{site,components}/**/*.less' --syntax less",
     "lint:tsc": "npm run tsc",
-    "pre-publish": "npm run check-commit && npm run test-all",
+    "pre-publish": "npm run check-commit",
     "prettier": "prettier -c --write '**/*'",
     "pretty-quick": "pretty-quick",
     "pub": "antd-tools run pub",
