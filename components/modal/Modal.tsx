@@ -158,6 +158,8 @@ export default class Modal extends React.Component<ModalProps, {}> {
     okButtonProps: {
       size: 'small',
     },
+    maskClosable: false,
+    keyboard: false,
   };
 
   static propTypes = {
