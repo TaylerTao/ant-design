@@ -1,6 +1,6 @@
 {
   "name": "@baidu/hi-antd",
-  "version": "3.25.4",
+  "version": "3.25.6",
   "description": "antd 百度Hi版",
   "keywords": [
     "ant",
@@ -80,10 +80,8 @@
     }
   },
   "browserslist": [
-    "last 2 version",
-    "Firefox ESR",
-    "> 1%",
-    "ie >= 9"
+    "Chrome >= 47",
+    "Safari >= 8"
   ],
   "dependencies": {
     "@ant-design/create-react-context": "^0.2.4",
