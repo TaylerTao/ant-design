@@ -435,6 +435,7 @@
   left: -9999px;
   z-index: @zindex-dropdown;
   box-sizing: border-box;
+  padding: 4px 0 8px;
   font-size: @font-size-base;
   // Fix select render lag of long text in chrome
   // https://github.com/ant-design/ant-design/issues/11456
@@ -500,7 +501,7 @@
     &-item {
       position: relative;
       display: block;
-      padding: 5px @control-padding-horizontal;
+      padding: 3px 28px 3px 16px;
       overflow: hidden;
       color: @text-color;
       font-weight: normal;
@@ -508,7 +509,7 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       cursor: pointer;
-      transition: background 0.3s ease;
+      //transition: background 0.3s ease;
 
       &:hover:not(&-disabled) {
         background-color: @item-hover-bg;
@@ -539,6 +540,7 @@
       }
 
       &-active:not(&-disabled) {
+        color: #fff;
         background-color: @select-item-active-bg;
       }
 
