@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import RcSelect, { Option, OptGroup } from 'rc-select';
+import RcSelect, { OptGroup, Option } from 'rc-select';
 import classNames from 'classnames';
 import omit from 'omit.js';
 import { ConfigConsumer, ConfigConsumerProps, RenderEmptyHandler } from '../config-provider';
@@ -128,6 +128,7 @@ export default class Select<T = SelectValue> extends React.Component<SelectProps
     showSearch: false,
     transitionName: 'slide-up',
     choiceTransitionName: 'zoom',
+    dropdownMatchSelectWidth: false,
   };
 
   static propTypes = SelectPropTypes;
